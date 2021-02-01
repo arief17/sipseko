@@ -1,0 +1,68 @@
+body{
+	font-family: 'Poppins';
+	background-color: rgba(84, 156, 91)
+}
+
+.login-left{
+	color: #fff;
+	margin-top: 80px;
+}
+
+.login-left p{
+	text-align: justify;
+	font-size: 13px;
+}
+
+.login-right{
+	background-color: #fff;
+	padding: 20px;
+	height: 623px;
+}
+
+.login-right form{
+	margin-top: 60px;
+}
+
+.footer-login small a{
+	text-decoration: none;
+}
+
+.footer-login{
+	text-align: center;
+}
+
+.footer-login ul li{
+	float: left;
+	list-style: none;
+	padding: 20px;
+}
+
+.info{
+	margin-top: 60px;
+	background-color: whitesmoke;
+	padding: 20px;
+	color: black;
+}
+
+.info i{
+	color: steelblue;
+	font-size: 30px;
+}
+
+.info li{
+	color: blue;
+	font-size: 14px;
+}
+
+.navbar-nav{
+	margin-left: 390px;
+}
+
+.navbar-nav a{
+	color: aqua;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:  rgb(17, 226, 38);
+}
+

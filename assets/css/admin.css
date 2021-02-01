@@ -1,0 +1,12 @@
+body{
+	font-family: 'Poppins';
+	background-color: rgba(84, 156, 91)
+}
+
+.menu-samping{
+	height: 630px;
+}
+
+.navbar-nav{
+	margin-left: auto;
+}
