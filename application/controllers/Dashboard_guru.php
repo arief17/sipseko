@@ -1,6 +1,15 @@
 <?php
 
-class Dashboard extends CI_Controller {
+class Dashboard_guru extends CI_Controller
+{
+
+	public function __construct()
+	{
+		parent::__construct();
+		if (!$this->session->userdata('user_name')) {
+			redirect('index.php/auth');
+		}
+	}
 
 	public function index()
 	{
@@ -10,5 +19,4 @@ class Dashboard extends CI_Controller {
 		$this->load->view('home/dashboard');
 		$this->load->view('home/__temp/footer');
 	}
-
 }

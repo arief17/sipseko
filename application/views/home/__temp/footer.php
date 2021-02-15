@@ -1,15 +1,13 @@
+<div class="foot-at mb-5">
 
-
-	<div class="foot-at mb-5">
-	
+</div>
+<!-- Footer -->
+<footer class="sticky-footer">
+	<div class="container my-auto">
+		<div class="copyright text-center my-auto">
+			<span>Copyright &copy; Gembelcoding - sipSEKO 2021 <?= date('Y'); ?></span>
+		</div>
 	</div>
-	<!-- Footer -->
-	<footer class="sticky-footer">
-    <div class="container my-auto">
-        <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Gembelcoding - sipSEKO 2021 <?= date('Y'); ?></span>
-        </div>
-    </div>
 </footer>
 <!-- End of Footer -->
 
@@ -21,20 +19,20 @@
 
 <!-- Scroll to Top Button-->
 <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
+	<i class="fas fa-angle-up"></i>
 </a>
 
 <!-- Logout Modal-->
 <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">Anda Yakin Ingin Keluar?</div>
-            <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="<?= base_url('index.php/auth'); ?>">Logout</a>
-            </div>
-        </div>
-    </div>
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body">Anda Yakin Ingin Keluar?</div>
+			<div class="modal-footer">
+				<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+				<a class="btn btn-primary" href="<?= base_url('index.php/auth'); ?>">Logout</a>
+			</div>
+		</div>
+	</div>
 </div>
 
 
@@ -57,9 +55,10 @@
 
 <script>
 	$(document).ready(function() {
-    $('#example').DataTable();		
-	} );
+		$('#example').DataTable();
+	});
 </script>
+
 </body>
 
 </html>
