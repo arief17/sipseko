@@ -1,47 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>APP - DASHBOARD GURU</title>
-	<link rel="stylesheet" href="<?= base_url()?>assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="<?= base_url()?>assets/css/admin.css">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
-</head>
-<body>
-	
-<!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
-	<div class="container-fluid">
-	<a class="navbar-brand" href="#"> SPPD-DIN</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		<div class="navbar-nav">
-			<a class="nav-link active" href="#">Home</a>
-			<a class="nav-link" href="#">Track Perjadin</a>
+        <!-- isi content -->
+        <div class="container-fluid">
+		<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">Administrator</a></li>
+			<li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+		</ol>
+		</nav>
+
+
+		<div class="row">
+			<div class="col-sm">
+				<a href="#" style="text-decoration: none;">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-sm-5 text-center">
+									<img src="<?= base_url() ?>assets/img/icon/team.png" width="80px" class="mb-3">
+								</div>	
+								<div class="col-sm-7 text-center">
+									<h1>Profile</h1>Arif Fahrudin, S.Kom
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm">
+				<a href="#" style="text-decoration: none;">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-sm-5 text-center">
+									<img src="<?= base_url() ?>assets/img/icon/checklist.png" width="80px" class="mb-3">
+								</div>	
+								<div class="col-sm-7 text-center">
+									<h1>68</h1>Belum di Validasi
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm">
+				<a href="#" style="text-decoration: none;">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-sm-5 text-center">
+									<img src="<?= base_url() ?>assets/img/icon/correction.png" width="80px" class="mb-3">
+								</div>	
+								<div class="col-sm-7 text-center">
+									<h1>68</h1>Sudah Validasi
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</a>
+			</div>
 		</div>
-	</div>
-</div>
-	</nav>
-	<!-- akhir navbar -->
-<div class="row">
-<div class="col-sm-2 col-xs-2 menu-samping bg-white">
-Dashboard
-</div>
-<div class="col-sm col-xs isi">
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ipsum vel fugiat ipsam! Quisquam hic doloremque sequi! Temporibus, nihil fuga?
-</div>
 
-</div>
+		<div class="row mt-3">
+			<div class="col-sm">
+				<div class="card">
+					<div class="card-body bg-warning">
+						<div class="row">
+							<div class="col-sm-12">
+								<span class="text-white" style="font-size: 30px;">Informasi</span> <img src="<?= base_url() ?>assets/img/icon/promote.png" width="40px" class="mb-3">
 
+								<hr class="text-white">
+							</div>
+							<div class="col-sm-12">
+								<p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, voluptatum quam. Rerum tempore ex aperiam nihil nisi labore consectetur nulla!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		
 
-<!-- awal JS dan JQUERY -->
-<script src="<?= base_url()?>assets/js/jquery-3.5.1.min.js"></script>
-<script src="<?= base_url()?>assets/js/bootstrap.min.js"></script>
-<script src="<?= base_url()?>assets/js/admin.js"></script>
-<!-- akhir JS dan JQUERY -->
-</body>
-</html>
+		

@@ -1,6 +1,6 @@
 body{
 	font-family: 'Poppins';
-	background-color: rgba(84, 156, 91)
+	background-color: rgb(59, 211, 92)
 }
 
 .login-left{
@@ -14,9 +14,10 @@ body{
 }
 
 .login-right{
-	background-color: #fff;
 	padding: 20px;
 	height: 623px;
+	background: linear-gradient(#fff, #9198e5);
+	box-shadow: 4px 3px #9198e5;
 }
 
 .login-right form{

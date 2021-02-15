@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>APP - SPPD LOGIN</title>
+	<title>APP - sipSEKO LOGIN</title>
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="<?= base_url()?>assets/css/bootstrap.min.css">
@@ -17,25 +17,11 @@
 <body>
 <div class="container">
 <div class="row">
-	<!-- navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-white">
-	<a class="navbar-brand" href="#"> SPPD-DIN</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		<div class="navbar-nav">
-			<a class="nav-link active" href="#">Home</a>
-			<a class="nav-link" href="#">Track Perjadin</a>
-		</div>
-	</div>
-	</nav>
-	<!-- akhir navbar -->
 	<div class="col-sm-8 col-xs-8 login-left">
-		<h1>Aplikasi Perjalanan Dinas (PERJADIN)</h1>
-		<p>Aplikasi ini digunakan untuk membuat Surat Perintah Perjalanan Dinas (SPPD) aplikasi ini langsung dikontrol oleh kepala sekolah sebagai Validator Kegiatan Perjalanan Dinas yang di lakukan oleh seluruh Pegawai di Lingkungan SMKN 1 Kragilan </p>
+		<h1>Sistem Informasi Pegawai Sekolah (sipSEKO)</h1>
+		<p>Aplikasi ini digunakan untuk membuat Kegiatan Pekerjaan Selama Melaksanakan Tugas di Sekolah, aplikasi ini langsung dikontrol oleh kepala sekolah sebagai Validator Kegiatan Pekerjaan yang di lakukan oleh seluruh Pegawai di Lingkungan SMKN 1 Kragilan </p>
 
-		<div class="info">
+		<div class="info d-none d-md-block">
 			<h3><i class="fa fa-bullhorn"></i> Informasi</h3>
 			<li>
 			Dalam Masa Pandemi Covid - 19 Perjalanan Dinas Ke Luar Provinsi Untuk Sementara Tidak di Ijinkan Kecuali ada Ijin Resmi dari Dinas Pendidikan atau di Atasnya
@@ -46,10 +32,10 @@
 		</div>
 	</div>
 	<div class="col-sm col-xs login-right">
-		<form action="dashboard">
+		<form action="<?= base_url()?>index.php/dashboard">
 		<h4 class="mb-4">LOGIN - FORM</h4>
 		<div class="form-group">
-			<label for="exampleInputEmail1">Email address</label>
+			<label for="exampleInputEmail1">Username</label>
 			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 		</div><br>
 		<div class="form-group">

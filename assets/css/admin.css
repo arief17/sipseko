@@ -1,12 +1,12 @@
-body{
-	font-family: 'Poppins';
-	background-color: rgba(84, 156, 91)
+.bg-menusamping{
+	background: linear-gradient(#fff, #72CF9B);
+	font-family: 'Roboto', sans-serif;
 }
 
-.menu-samping{
-	height: 630px;
+.validasi-keg a {
+	font-size: 10px;
 }
 
-.navbar-nav{
-	margin-left: auto;
+.dash-valid a{
+	text-decoration: none;
 }
