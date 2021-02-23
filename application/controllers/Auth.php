@@ -49,14 +49,14 @@ class Auth extends CI_Controller
 
 
 					if ($user['id_level'] == 1) {
-						redirect('index.php/validator_guru/dashboard_valid_guru');
+						redirect('index.php/validator/dashboard_valid');
 					} else if ($user['id_level'] == 2) {
-						redirect('index.php/validator/dashboard_tu');
+						redirect('index.php/validator/dashboard_valid');
 					} else if ($user['id_level'] == 3) {
-						redirect('dashboard_guru');
+						redirect('index.php/dashboard');
 					} else {
 
-						redirect('dashboard_tu');
+						redirect('index.php/dashboard');
 					}
 				} else {
 					$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Password Salah!</div>');
@@ -71,5 +71,11 @@ class Auth extends CI_Controller
 			$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Username Tidak Terdaftar</div>');
 			redirect('index.php/auth');
 		}
+	}
+
+	public function logout()
+	{
+		$this->session->sess_destroy();
+		redirect('index.php/auth');
 	}
 }

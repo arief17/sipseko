@@ -24,14 +24,14 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link text-black-50" href="<?= base_url('index.php/validator_guru/dashboard_valid_guru') ?>">
+                <a class="nav-link text-black-50" href="<?= base_url('index.php/validator/dashboard_valid') ?>">
                     <img src="<?= base_url() ?>assets/img/icon/speedometer.png" width="40px" alt="">
                     <span class="text-black-50">Dashboard</span>
                 </a>
             </li>
 
             <li class="nav-item active">
-                <a class="nav-link text-black-50" href="<?= base_url('index.php/validator_guru/data_user') ?>">
+                <a class="nav-link text-black-50" href="<?= base_url('index.php/validator/data_user') ?>">
                     <img src="<?= base_url() ?>assets/img/icon/team.png" width="40px" alt="">
                     <span class="text-black-50">Data User</span>
                 </a>
@@ -44,7 +44,7 @@
             </div>
 
             <li class="nav-item active">
-                <a href="<?= base_url('index.php/validator_guru/validasi_keg') ?>" class="nav-link">
+                <a href="<?= base_url('index.php/validator/validasi_keg') ?>" class="nav-link">
                     <img src="<?= base_url() ?>assets/img/icon/check.png" width="40px" alt="">
                     <span class="text-black-50">Validasi Kegiatan</span>
                 </a>
@@ -71,8 +71,5 @@
                 </l>
                 <!-- Divider -->
                 <hr class="sidebar-divider d-none d-md-block">
-
-
-
         </ul>
         <!-- End of Sidebar -->

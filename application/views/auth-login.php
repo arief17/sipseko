@@ -43,11 +43,11 @@
 					<h4 class="mb-4">LOGIN - FORM</h4>
 					<div class="form-group">
 						<label for="exampleInputEmail1">Username</label>
-						<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username" autocomplete="off">
+						<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username" autocomplete="off" required oninvalid="this.setCustomValidity('Username Tidak Boleh Kosong')" oninput="setCustomValidity('')">
 					</div><br>
 					<div class="form-group">
 						<label for="exampleInputPassword1">Password</label>
-						<input type="password" class="form-control" id="exampleInputPassword1" name="password">
+						<input type="password" class="form-control" id="exampleInputPassword1" name="password" required oninvalid="this.setCustomValidity('Password Tidak Boleh Kosong')" oninput="setCustomValidity('')">
 					</div><br>
 					<button type="submit" class="btn btn-primary col-sm-12">Masuk Ke Aplikasi</button>
 				</form><br>

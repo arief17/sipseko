@@ -15,10 +15,21 @@
             <!-- Topbar Navbar -->
             <ul class="navbar-nav ml-auto">
                 <div class="mt-4">
-                    <?php
-                    echo date('D, d-m-Y');
-
-                    ?>
+                    <script type='text/javascript'>
+                        var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+                        var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+                        var date = new Date();
+                        var day = date.getDate();
+                        var month = date.getMonth();
+                        var thisDay = date.getDay(),
+                            thisDay = myDays[thisDay];
+                        var yy = date.getYear();
+                        var year = (yy < 1000) ? yy + 1900 : yy;
+                        document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+                        //
+                    </script>
+                    |
+                    <?= $user['nama_user']; ?>
                 </div>
 
                 <div class="topbar-divider d-none d-sm-block"></div>

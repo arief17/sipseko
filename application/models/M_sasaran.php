@@ -2,6 +2,13 @@
 
 class M_sasaran extends CI_Model
 {
+
+	function join($table, $tbljoin, $join)
+	{
+		$this->db->join($tbljoin, $join);
+		return $this->db->get($table);
+	}
+
 	function tampil_sasaran()
 	{
 		return $this->db->get('sasaran');

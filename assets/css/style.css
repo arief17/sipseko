@@ -67,3 +67,9 @@ body{
     color:  rgb(17, 226, 38);
 }
 
+@media (min-width: 576px) { 
+
+font-size: 20px!important;
+
+
+ }

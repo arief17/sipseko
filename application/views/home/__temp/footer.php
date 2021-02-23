@@ -19,7 +19,7 @@
 
 <!-- Scroll to Top Button-->
 <a class="scroll-to-top rounded" href="#page-top">
-	<i class="fas fa-angle-up"></i>
+	<i class="fa fa-angle-up"></i>
 </a>
 
 <!-- Logout Modal-->
@@ -29,7 +29,7 @@
 			<div class="modal-body">Anda Yakin Ingin Keluar?</div>
 			<div class="modal-footer">
 				<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-				<a class="btn btn-primary" href="<?= base_url('index.php/auth'); ?>">Logout</a>
+				<a class="btn btn-primary" href="<?= base_url('index.php/auth/logout'); ?>">Logout</a>
 			</div>
 		</div>
 	</div>
@@ -58,6 +58,8 @@
 		$('#example').DataTable();
 	});
 </script>
+
+
 
 </body>
 

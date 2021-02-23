@@ -6,12 +6,19 @@ class Inp_sasaran extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
+		if (!$this->session->userdata('username')) {
+			redirect('index.php/auth');
+		}
 		$this->load->model('m_sasaran');
 	}
 
 	public function index()
 	{
-		$data['sasaran_keg'] = $this->m_sasaran->tampil_sasaran()->result();
+
+		$data['user'] = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
+		// $data['sasaran'] = $this->m_sasaran->join('sasaran', 'user', 'sasaran.id_user=user.id_user')->result();
+		// $data['sasaran'] = $this->db->get_where('sasaran', array('id_user' => 47))->result();
+
 		$this->load->view('home/__temp/header', $data);
 		$this->load->view('home/__temp/sidenav', $data);
 		$this->load->view('home/__temp/topbar', $data);
@@ -21,9 +28,11 @@ class Inp_sasaran extends CI_Controller
 
 	public function tambah_sasaran()
 	{
+		$id_user = $this->input->post('id_user');
 		$nama_sasaran = $this->input->post('nama_sasaran');
 
 		$data = array(
+			'id_user' => $id_user,
 			'id_sasaran' => '',
 			'nama_sasaran' => $nama_sasaran
 
@@ -36,10 +45,13 @@ class Inp_sasaran extends CI_Controller
 
 	public function update_sasaran()
 	{
+		$id_user = $this->input->post('id_user');
 		$id_sasaran = $this->input->post('id_sasaran');
 		$nama_sasaran = $this->input->post('nama_sasaran');
 
 		$data = array(
+			'id_user' => $id_user,
+			'id_sasaran' => $id_sasaran,
 			'nama_sasaran' => $nama_sasaran
 		);
 
